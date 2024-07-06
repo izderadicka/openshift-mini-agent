@@ -13,6 +13,7 @@ The current scripts are limited to deploy just the Single Node OpenShift (SNO) t
 * Requires [libvirt](https://libvirt.org/compiling.html)
     * [virt-manager](https://virt-manager.org/) is recommended
 * An ssh key stored in `~/.ssh/id_rsa.pub`
+* curl
 
 # Getting started
 

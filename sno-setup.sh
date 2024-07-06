@@ -123,7 +123,7 @@ networking:
     - 172.30.0.0/16
 platform:
     none: {}
-pullSecret: '{"auths": {"empty": {"auth": "ZW1wdHk6ZW1wdHkK"}}}'
+pullSecret: '${pullSecret}'
 sshKey: ${sshKey}
 EOF
 
@@ -137,8 +137,8 @@ sudo chmod a+x ${assets_dir}
 sudo virt-install \
   --connect 'qemu:///system' \
   -n ${hostname} \
-  --vcpus 8 \
-  --memory 32768 \
+  --vcpus ${vcups} \
+  --memory ${memory} \
   --disk size=100,bus=virtio,cache=none,io=native \
   --disk path=${assets_dir}/agent.x86_64.iso,device=cdrom,bus=sata \
   --boot hd,cdrom \
