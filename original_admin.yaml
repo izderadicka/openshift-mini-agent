@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  kubeadmin: JDJhJDEwJE5NaEVuVDVXQ3JFRU1rUGYxZ3NEeHVqaDJyYXVINWhIeFcwYUtaNlB0TFozOUl4a3hWRmFP
+kind: Secret
+metadata:
+  creationTimestamp: "2024-07-05T10:41:33Z"
+  name: kubeadmin
+  namespace: kube-system
+  resourceVersion: "342"
+  uid: 3e7f9180-d8d3-4f69-a6bf-5cea23d76085
+type: Opaque
